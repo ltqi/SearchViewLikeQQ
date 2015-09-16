@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9000"
+    android:orientation="vertical"
+    tools:context="com.qlt.searchview.MainActivity" >
+
+    <com.qlt.searchview.lib.MSearchView
+        android:id="@+id/cm_searchview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.qlt.searchview.lib.MSearchView>
+
+    <ListView
+        android:id="@+id/search_result_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

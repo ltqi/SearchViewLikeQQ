@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qlt.searchview.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/topview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#222"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:text="标题栏" />
+        </LinearLayout>
+
+        <com.qlt.searchview.lib.MSearchView
+            android:id="@+id/cm_searchview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.qlt.searchview.lib.MSearchView>
+
+        <ListView
+            android:id="@+id/search_listvew"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+<!--             android:stackFromBottom="true" -->
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

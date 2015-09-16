@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#dfded7"
+    android:gravity="center_vertical"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchview_normal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/searchview_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_toRightOf="@+id/searchview_ib_icon"
+            android:hint="搜索"
+            android:cursorVisible="false"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/searchview_ib_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-5dp"
+            android:background="@drawable/searchview_icon"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/searchview_del_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_del_selector"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/searchview_cancel_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="5dp"
+        android:text="取消"
+        android:textColor="#007788"
+        android:contentDescription="@null" />
+<!--         android:background="@drawable/searchview_cancel_bt" -->
+    <!-- android:background="@drawable/search_go_btn" -->
+
+</LinearLayout>
